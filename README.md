@@ -30,3 +30,10 @@ Welcome to my Portfolio Website! This project showcases my skills, projects, and
   - CORS
   - Dotenv (for environment variables)
 
+
+## Contact
+
+1) 📧Email: [click](anurajvenkatpurwar@gmail.com)
+2) 💼LinkedIn: [Connect](https://www.linkedin.com/in/anuraj-venkatpurwar/)
+3) 📸Instagram: [Follow](https://www.instagram.com/a_n_u_r_a_j_70/)
+
