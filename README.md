@@ -2,6 +2,10 @@
 
 Welcome to my Portfolio Website! This project showcases my skills, projects, and contact information. It is built using React for the frontend and Express with MongoDB for the backend.
 
+# Preview
+
+![image](https://github.com/Anuraj4/Images/blob/main/Screenshot%202024-08-28%20195228.png)
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
