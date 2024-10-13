@@ -6,6 +6,49 @@ import Footer from '../components/Footer';
 const Contact = () => {
     const [selectedRating, setSelectedRating] = useState('');
     const [feedbackMessage, setFeedbackMessage] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Prepare the form data
+        const formData = {
+            name,
+            email,
+            subject,
+            message
+        };
+
+        try {
+            // Send form data to backend
+            const response = await fetch('http://localhost:5000/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+            if (data.success) {
+                alert('Message sent successfully!');
+                // Clear form inputs after successful submission
+                setName('');
+                setEmail('');
+                setSubject('');
+                setMessage('');
+            } else {
+                alert('Failed to send message.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('An error occurred while submitting the form');
+        }
+    };
+
 
     useEffect(() => {
         const ratingsContainer = document.querySelector('.ratings-container');
@@ -90,25 +133,57 @@ const Contact = () => {
 
                         <div className="column right" data-aos="flip-right">
                             <div className="text">Message Me</div>
-                            <form method="post" data-netlify="true">
+                            <form onSubmit={handleSubmit}>
                                 <div className="fields">
                                     <div className="field">
-                                        <input className="name" type="text" placeholder="Name" required autoComplete="off" />
+                                        <input
+                                            className="name"
+                                            type="text"
+                                            placeholder="Name"
+                                            required
+                                            autoComplete="off"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)} // Controlled component
+                                        />
                                     </div>
                                     <div className="field">
-                                        <input className="email" type="email" placeholder="Email" required autoComplete="off" />
+                                        <input
+                                            className="email"
+                                            type="email"
+                                            placeholder="Email"
+                                            required
+                                            autoComplete="off"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)} // Controlled component
+                                        />
                                     </div>
                                 </div>
                                 <div className="field">
-                                    <input type="text" placeholder="Subject" required autoComplete="off" />
+                                    <input
+                                        type="text"
+                                        placeholder="Subject"
+                                        required
+                                        autoComplete="off"
+                                        value={subject}
+                                        onChange={(e) => setSubject(e.target.value)} // Controlled component
+                                    />
                                 </div>
                                 <div className="textarea">
-                                    <textarea cols="30" rows="10" placeholder="Message" required autoComplete="off"></textarea>
+                                    <textarea
+                                        cols="30"
+                                        rows="10"
+                                        placeholder="Message"
+                                        required
+                                        autoComplete="off"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)} // Controlled component
+                                    ></textarea>
                                 </div>
                                 <div className="button" id="contact_btn">
                                     <button type="submit">Send Message</button>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
