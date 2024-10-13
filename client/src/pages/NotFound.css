@@ -1,0 +1,54 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: #151719; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+.not-found h1 {
+    font-size: 6rem; /* Large font size for the error code */
+    margin: 0;
+    color: #dc3545; /* Bootstrap danger color for emphasis */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.not-found h2 {
+    font-size: 2rem; /* Medium font size for the title */
+    margin: 0.5rem 0; /* Margin for spacing */
+    color: white;
+}
+
+.not-found p {
+    font-size: 1.2rem; /* Regular font size for the message */
+    margin: 1rem 0; /* Margin for spacing */
+    color: white;
+}
+
+.back-link {
+    display: inline-block; /* Make link a block for better click area */
+    margin-top: 1.5rem; /* Space above the link */
+    padding: 0.5rem 1.5rem; /* Padding for a button-like appearance */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.back-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+    }
+}
