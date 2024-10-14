@@ -24,7 +24,7 @@ const Contact = () => {
 
         try {
             // Send form data to backend
-            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}api/contact`, {
+            const response = await fetch(`https://mern-portfolio-pdnu.onrender.com/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
