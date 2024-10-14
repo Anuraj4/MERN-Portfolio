@@ -24,7 +24,7 @@ const Contact = () => {
 
         try {
             // Send form data to backend
-            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <MdEmail style={{ fontSize: '20px'}} />
+                                    <MdEmail style={{ fontSize: '20px' }} />
                                     <div className="info">
                                         <div className="head">Email</div>
                                         <div className="sub-title">anurajvenkatpurwar@gmail.com</div>
