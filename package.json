@@ -1,0 +1,11 @@
+{
+  "name": "mern-portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my Portfolio Website! This project showcases my skills, projects, and contact information. It is built using React for the frontend and Express with MongoDB for the backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
