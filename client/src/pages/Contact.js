@@ -24,7 +24,7 @@ const Contact = () => {
 
         try {
             // Send form data to backend
-            const response = await fetch('http://localhost:5000/api/contact', {
+            const response = await fetch('https://mern-portfolio-3x0o.onrender.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <MdEmail style={{ fontSize: '24px', marginRight: '10px' }} />
+                                    <MdEmail style={{ fontSize: '20px'}} />
                                     <div className="info">
                                         <div className="head">Email</div>
                                         <div className="sub-title">anurajvenkatpurwar@gmail.com</div>
