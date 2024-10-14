@@ -1,34 +1,38 @@
-import React, {useEffect} from 'react';
-import '../App.css'
+import React, { useEffect } from 'react';
+import '../App.css';
 import img from '../images/png8.png';
 import Footer from '../components/Footer';
 import Typed from 'typed.js';
 
-
 const Home = () => {
     useEffect(() => {
-        // Initialize Typed.js for the first typing element
-        const options1 = {
-          strings: ["Web Developer", "Photo Editor", "Graphic Designer", "Coder", "Problem Solver"],
-          typeSpeed: 100,
-          backSpeed: 60,
-          loop: true,
-          fadeOut: true,
+        // Options for Typed.js
+        const options = {
+            strings: ["Web Developer", "Photo Editor", "Graphic Designer", "Coder", "Problem Solver"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+            fadeOut: true,
+            fadeOutClass: "typed-fade-out", // Add a class for fade out effect
+            cursorChar: "|", // Custom cursor character
+            cursorBlinking: true, // Enable cursor blinking
         };
-    
-        const typed1 = new Typed(".typing", options1);
-    
-        // Clean up on component unmount
+
+        // Initialize Typed.js
+        const typed = new Typed(".typing", options);
+
+        // Cleanup function to destroy Typed.js instance on unmount
         return () => {
-          typed1.destroy();
+            typed.destroy();
         };
-      }, []);    
+    }, []); // Empty dependency array to run once on mount
+
     return (
         <>
             <section className="home" id="home">
                 <div className="max-width">
                     <div className="home-content">
-                        <div className="text-4" data-aos="fade-up" onLoad="askName()">
+                        <div className="text-4" data-aos="fade-up">
                             <h1 style={{ marginBottom: "30px" }} id="greeting"></h1>
                         </div>
                         <div className="text-1" data-aos="fade-up">

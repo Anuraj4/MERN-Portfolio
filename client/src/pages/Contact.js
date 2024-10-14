@@ -122,7 +122,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <MdEmail style={{ fontSize: '24px', marginRight: '10px' }} />
+                                    <MdEmail style={{ fontSize: '20px'}} />
                                     <div className="info">
                                         <div className="head">Email</div>
                                         <div className="sub-title">anurajvenkatpurwar@gmail.com</div>

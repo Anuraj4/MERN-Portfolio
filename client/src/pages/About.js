@@ -3,6 +3,8 @@ import '../App.css';
 import img from '../images/profile4.jpg';
 import Footer from '../components/Footer';
 import Typed from 'typed.js';
+import WorkExperience from './WorkExperience';
+import Competitive from './Competitive';
 
 
 const About = () => {
@@ -15,6 +17,9 @@ const About = () => {
             backSpeed: 60,
             loop: true,
             fadeOut: true,
+            fadeOutClass: "typed-fade-out", // Add a class for fade out effect
+            cursorChar: "|", // Custom cursor character
+            cursorBlinking: true, // Enable cursor blinking
         };
 
         const typed1 = new Typed(".typing", options1);
@@ -52,6 +57,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <WorkExperience />
+            <Competitive />
             <Footer />
 
         </>

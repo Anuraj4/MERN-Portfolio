@@ -14,10 +14,15 @@ body {
   font-family: 'Poppins', sans-serif;
   /* Apply the font family to the whole document */
 }
-html, body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
 }
 
 #icon {
@@ -943,6 +948,13 @@ footer {
 
 }
 
+.typed-fade-out {
+  opacity: 0;
+  /* Make it invisible during fade-out */
+  transition: opacity 0.5s ease-out;
+  /* Smooth transition effect */
+}
+
 footer .text-center {
   text-align: center !important;
 }
@@ -1113,11 +1125,12 @@ footer i:hover {
 .projects .card a {
   color: rgb(232, 84, 43);
   font-weight: 500;
+  font-size: 15px;
 }
 
 .projects p {
   padding: 15px;
-  font-size: 1em;
+  font-size: 15px;
   color: white;
 }
 
@@ -1132,7 +1145,6 @@ footer i:hover {
   /* Lift the card on hover */
   box-shadow: 0 0 20px rgba(83, 165, 228, 0.3), 0 0 20px rgba(83, 165, 228, 0.3), 0 0 20px rgba(83, 165, 228, 0.3);
   /* Glow effect */
-
 }
 
 /* CSS for scroll to top button */
@@ -1219,12 +1231,13 @@ footer i:hover {
 @media (max-width: 1104px) {
 
   .about .about-content .left img {
-    height: 270px;
-    width: 270px;
+    height: 210px;
+    width: 210px;
   }
 
+
   .about .about-content #demo {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 }
 
@@ -1497,7 +1510,7 @@ footer i:hover {
     max-width: 400px;
     width: 55%;
     /* Ensure the link takes full width within max-width */
-    padding: 10px 10px;
+    padding: 5px 10px;
     /* Optional: add some padding for better appearance */
     text-decoration: none;
     /* Remove underline from the link */
@@ -1562,7 +1575,7 @@ footer i:hover {
   .panel-container {
     width: 80%;
   }
-  
+
 
 }
 
@@ -1572,12 +1585,17 @@ footer a {
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
+
 footer .footerIcons {
-  font-size: 20px; /* Reduce icon size */
-  margin: 0 6px; /* Less space between icons */
+  font-size: 20px;
+  /* Reduce icon size */
+  margin: 0 6px;
+  /* Less space between icons */
 }
+
 footer .text-center {
-  font-size: 12px; /* Smaller text */
+  font-size: 12px;
+  /* Smaller text */
 }
 
 footer a:hover {
@@ -1898,7 +1916,8 @@ footer a:active {
   }
 
   .timeline-content {
-    padding: 10px;
+    padding: 30px;
+    margin: 20px;
   }
 
   .timeline-content h3 {

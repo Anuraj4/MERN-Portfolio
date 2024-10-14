@@ -13,6 +13,7 @@ import cpp from '../images/skill-icons/icons8-c++.svg';
 import python from '../images/skill-icons/icons8-python-48.png';
 import github from '../images/skill-icons/icons8-github-48.png'
 import Footer from '../components/Footer';
+import Certifications from './Certifications';
 
 
 const Skills = () => {
@@ -60,6 +61,7 @@ const Skills = () => {
                     </div>
                 </div>
             </section>
+            <Certifications />
             <Footer />
         </>
 
