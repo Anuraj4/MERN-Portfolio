@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config(); // Load environment variables early
+const contactRoute = require('../server/Routes/contact');
 
 // Initialize Express
 const app = express();
@@ -11,7 +12,7 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse incoming requests with JSON payloads
 
 // Import routes
-const contactRoute = require('./Routes/contact');
+// const contactRoute = require('./Routes/contact');
 
 // Use routes
 app.use('/api', contactRoute);

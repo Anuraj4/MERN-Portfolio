@@ -5,8 +5,8 @@ const ContactMessage = require('../models/ContactMessage');// Import the model
 // POST route to handle contact form submissions
 router.post('/contact', async (req, res) => {
   const { name, email, subject, message } = req.body;
-
   try {
+    console.log('activate');
     const newMessage = new ContactMessage({ name, email, subject, message });
     await newMessage.save();
     res.status(200).json({ success: true, message: 'Message sent successfully!' });
