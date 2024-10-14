@@ -10,6 +10,8 @@ import Navbar from './components/Navbar';
 import Skills from './pages/Skills';
 import NotFound from './pages/NotFound';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
 
 // Slide and fade transition
 const pageTransition = {
