@@ -24,7 +24,7 @@ const Contact = () => {
 
         try {
             // Send form data to backend
-            const response = await fetch('https://portfolio-indol-kappa-41.vercel.app', {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
