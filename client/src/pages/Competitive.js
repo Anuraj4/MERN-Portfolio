@@ -23,14 +23,13 @@ const Competitive = () => {
                     <div className="column right skill-box">
                         <div className="icons">
                             <a href="https://leetcode.com/u/anuraj3690/" target="_blank" rel="noopener noreferrer">
-                                <img src={leetcode}
-                                    width="40%" alt="LeetCode logo" id="leetcode-icon" data-aos="flip-left" />
+                                <img src={leetcode} loading="lazy" width="40%" alt="LeetCode logo" id="leetcode-icon" data-aos="flip-left" />
                             </a>
                             <a href="https://www.naukri.com/code360/profile/anuraj44" target="_blank" rel="noopener noreferrer">
-                                <img src={nc} alt="Coding Ninjas logo" className="cn-logo-main-mobile" />
+                                <img src={nc} alt="Coding Ninjas logo" loading="lazy" className="cn-logo-main-mobile" />
                             </a>
                             <a href="https://github.com/Anuraj4/" target="_blank" rel="noopener noreferrer">
-                                <img src={github} alt="GitHub logo" id="github-icon" data-aos="flip-left" />
+                                <img src={github} alt="GitHub logo" loading="lazy" id="github-icon" data-aos="flip-left" />
                             </a>
                         </div>
                     </div>

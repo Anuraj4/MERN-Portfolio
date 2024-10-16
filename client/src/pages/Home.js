@@ -43,7 +43,7 @@ const Home = () => {
                         <div className="text-2" data-aos="fade-up">Anuraj</div>
                         <div className="text-3" data-aos="fade-up">I am a <span className="typing"></span></div>
                         <div className="images">
-                            <img src={img} width="70%" height="auto" alt="Profile Picture" style={{ marginTop: "20px" }} />
+                            <img src={img} width="70%" height="auto" loading="lazy" alt="Profile Picture" style={{ marginTop: "20px" }} />
                         </div>
                     </div>
                 </div>

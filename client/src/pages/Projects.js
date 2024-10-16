@@ -13,7 +13,7 @@ const Projects = () => {
                     <div className="serv-content">
                         <div className="card" data-aos="flip-left">
                             <div className="box">
-                                <img src={projectImage} width="10%" height="auto" alt="Project 1 Image" />
+                                <img src={projectImage} loading="lazy" width="10%" height="auto" alt="Project 1 Image" />
                                 <div className="text">
                                     <span>
                                         <a href="https://github.com/Anuraj4/Data-Structure-Visualizer" target="_blank" rel="noopener noreferrer">
@@ -30,7 +30,7 @@ const Projects = () => {
 
                         <div className="card" data-aos="flip-left">
                             <div className="box">
-                                <img src={projectImage} style={{ maxWidth: '100%' }} height="auto" alt="Project 2 Image" />
+                                <img src={projectImage} style={{ maxWidth: '100%' }} height="auto" loading="lazy" alt="Project 2 Image" />
                                 <div className="text">
                                     <span>
                                         <a href="https://github.com/Anuraj4/SubmitCV-Website" target="_blank" rel="noopener noreferrer">
@@ -46,7 +46,7 @@ const Projects = () => {
 
                         <div className="card" data-aos="flip-left">
                             <div className="box">
-                                <img src={projectImage} style={{ maxWidth: '100%' }} height="auto" alt="Project 3 Image" />
+                                <img src={projectImage} style={{ maxWidth: '100%' }} height="auto" loading="lazy" alt="Project 3 Image" />
                                 <div className="text">
                                     <span>
                                         <a href="https://github.com/Anuraj4/Health-Recommendation-System" target="_blank" rel="noopener noreferrer">
@@ -62,7 +62,7 @@ const Projects = () => {
 
                         <div className="card" data-aos="flip-left">
                             <div className="box">
-                                <img src={projectImage} alt="Project 4 Image" />
+                                <img src={projectImage} style={{ maxWidth: '100%' }} height="auto" loading="lazy" alt="Project 4 Image"/>
                                 <div className="text">
                                     <span>
                                         <a href="https://github.com/Anuraj4/React-Weather-App" target="_blank" rel="noopener noreferrer">

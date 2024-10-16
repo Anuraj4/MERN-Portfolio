@@ -40,7 +40,7 @@ const About = () => {
                     <h2 className="title" data-aos="fade-down">About Me</h2>
                     <div className="about-content">
                         <div className="column left" data-aos="fade-right">
-                            <img src={img} alt="Profile" />
+                            <img src={img} loading="lazy" alt="Profile" />
                         </div>
                         <div className="column right" data-aos="fade-up">
                             <div className="text">

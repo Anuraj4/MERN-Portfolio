@@ -41,21 +41,21 @@ const Skills = () => {
 
                         <div className="column right skill-box">
                             <div className="icons">
-                                <img src={css} alt="CSS" id="css-icon" data-aos="flip-left" />
-                                <img src={js} alt="JavaScript" id="js-icon" data-aos="flip-left" />
-                                <img src={react} alt="React" id="react-icon" data-aos="flip-left" />
-                                <img src={flutter} id="flutter-icon" data-aos="flip-left" />
-                                <img src={java} alt="Java" id="java-icon" data-aos="flip-left" />
-                                <img src={git} alt="Git" id="git-icon" data-aos="flip-left" />
+                                <img src={css} alt="CSS" loading="lazy" id="css-icon" data-aos="flip-left" />
+                                <img src={js} alt="JavaScript" loading="lazy" id="js-icon" data-aos="flip-left" />
+                                <img src={react} alt="React" loading="lazy" id="react-icon" data-aos="flip-left" />
+                                <img src={flutter} id="flutter-icon" loading="lazy" data-aos="flip-left" />
+                                <img src={java} alt="Java" id="java-icon" loading="lazy" data-aos="flip-left" />
+                                <img src={git} alt="Git" id="git-icon" loading="lazy" data-aos="flip-left" />
                             </div>
 
                             <div className="icons">
-                                <img src={html} alt="HTML" id="html-icon" data-aos="flip-left" />
-                                <img src={nodejs} alt="Node.js" id="nodejs-icon" data-aos="flip-left" />
-                                <img src={vscode} alt="VSCode" id="vscode-icon" data-aos="flip-left" />
-                                <img src={cpp} alt='CPP' id="cpp-icon" data-aos="flip-left" />
-                                <img src={python} alt="Python" id="python-icon" data-aos="flip-left" />
-                                <img src={github} alt="GitHub" id="github-icon" data-aos="flip-left" />
+                                <img src={html} alt="HTML" loading="lazy" id="html-icon" data-aos="flip-left" />
+                                <img src={nodejs} alt="Node.js" loading="lazy" id="nodejs-icon" data-aos="flip-left" />
+                                <img src={vscode} alt="VSCode" loading="lazy" id="vscode-icon" data-aos="flip-left" />
+                                <img src={cpp} alt='CPP' loading="lazy" id="cpp-icon" data-aos="flip-left" />
+                                <img src={python} alt="Python" loading="lazy" id="python-icon" data-aos="flip-left" />
+                                <img src={github} alt="GitHub" loading="lazy" id="github-icon" data-aos="flip-left" />
                             </div>
                         </div>
                     </div>

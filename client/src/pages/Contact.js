@@ -197,15 +197,15 @@ const Contact = () => {
                     <strong>How satisfied are you with our <br /> portfolio website?</strong>
                     <div className="ratings-container">
                         <div className="rating">
-                            <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png" alt="Unhappy" />
+                            <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png" loading="lazy" alt="Unhappy" />
                             <small>Unhappy</small>
                         </div>
                         <div className="rating">
-                            <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png" alt="Neutral" />
+                            <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png" loading="lazy" alt="Neutral" />
                             <small>Neutral</small>
                         </div>
                         <div className="rating active">
-                            <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png" alt="Satisfied" />
+                            <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png" loading="lazy" alt="Satisfied" />
                             <small>Satisfied</small>
                         </div>
                     </div>
