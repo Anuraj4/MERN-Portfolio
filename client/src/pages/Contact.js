@@ -10,6 +10,8 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false); // Loading state
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -47,6 +49,8 @@ const Contact = () => {
         } catch (error) {
             console.error('Error submitting form:', error);
             alert('Please refresh page and try once again ☺️');
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -181,7 +185,7 @@ const Contact = () => {
                                     ></textarea>
                                 </div>
                                 <div className="button" id="contact_btn">
-                                    <button type="submit">Send Message</button>
+                                    <button type="submit" disabled={isSubmitting}>{isSubmitting ? 'Submitting...' : 'Send Message'}</button>
                                 </div>
                             </form>
 
