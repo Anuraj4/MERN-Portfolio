@@ -35,7 +35,7 @@ const Contact = () => {
             const data = await response.json();
             console.log('data: ', data);
             if (data.success) {
-                alert('Message sent successfully!');
+                alert('Message sent successfully!❤️👍');
                 // Clear form inputs after successful submission
                 setName('');
                 setEmail('');
@@ -46,7 +46,7 @@ const Contact = () => {
             }
         } catch (error) {
             console.error('Error submitting form:', error);
-            alert('An error occurred while submitting the form');
+            alert('Please refresh page and try once again ☺️');
         }
     };
 
