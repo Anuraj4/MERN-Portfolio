@@ -15,6 +15,8 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true); // Change button text to "Submitting..." when form is submitted
+
 
         // Prepare the form data
         const formData = {
