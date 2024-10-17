@@ -27,14 +27,18 @@ const Contact = () => {
         };
 
         try {
+            const timeoutPromise = new Promise((_, reject) =>
+                setTimeout(() => reject(new Error("Request timed out")), 5000) // 5 seconds timeout
+            );
             // Send form data to backend
-            const response = await fetch(`https://mern-portfolio-pdnu.onrender.com/api/contact`, {
+            const fetchPromise = fetch(`https://mern-portfolio-pdnu.onrender.com/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(formData)
             });
+            const response = await Promise.race([fetchPromise, timeoutPromise]);
 
             const data = await response.json();
             console.log('data: ', data);
