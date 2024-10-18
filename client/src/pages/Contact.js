@@ -28,7 +28,7 @@ const Contact = () => {
 
         try {
             const timeoutPromise = new Promise((_, reject) =>
-                setTimeout(() => reject(new Error("Request timed out")), 5000) // 5 seconds timeout
+                setTimeout(() => reject(new Error("Request timed out")), 8000) // 5 seconds timeout
             );
             // Send form data to backend
             const fetchPromise = fetch(`https://mern-portfolio-pdnu.onrender.com/api/contact`, {
