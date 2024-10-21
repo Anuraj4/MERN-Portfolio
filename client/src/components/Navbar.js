@@ -13,11 +13,9 @@ const Navbar = () => {
             setIsSticky(false);
         }
     };
-
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         
@@ -25,7 +23,6 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
     return (
         <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
             <div className="max-width">
