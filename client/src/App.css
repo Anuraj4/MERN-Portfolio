@@ -1141,7 +1141,6 @@ footer i:hover {
 }
 
 .projects .card:hover {
-  transform: rotateY(15deg) rotateX(15deg);
   /* Lift the card on hover */
   box-shadow: 0 0 20px rgba(83, 165, 228, 0.3), 0 0 20px rgba(83, 165, 228, 0.3), 0 0 20px rgba(83, 165, 228, 0.3);
   /* Glow effect */
@@ -2070,4 +2069,41 @@ footer a:active {
     margin-bottom: 15px;
     /* Space before the textarea */
   }
+}
+
+.btn-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-card i {
+  margin-right: 8px;
+}
+
+.btn-card:hover {
+  background-color: #555;
+}
+.btn-github {
+  background-color: #333;
+  float: left;
+}
+
+.btn-github:hover {
+  background-color: #24292e;
+}
+.btn-demo{
+  float: right;
+}
+
+.btn-demo:hover {
+  background-color: #0056b3;
 }
