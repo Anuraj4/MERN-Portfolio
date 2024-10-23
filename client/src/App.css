@@ -536,8 +536,6 @@ section .title::after {
 }
 
 .services .serv-content .card:hover {
-  transform: rotateY(15deg) rotateX(15deg);
-  /* Lift the card on hover */
   box-shadow: 0 0 20px rgba(83, 165, 228, 0.3), 0 0 20px rgba(83, 165, 228, 0.3), 0 0 20px rgba(83, 165, 228, 0.3);
   /* Glow effect */
 }
