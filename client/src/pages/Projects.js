@@ -90,18 +90,17 @@ const Projects = () => {
                                 <img src={projectImage} style={{ maxWidth: '100%' }} height="auto" loading="lazy" alt="Project 3 Image" />
                                 <div className="text">
                                     <span>
-                                        <a href="https://github.com/Anuraj4/Health-Recommendation-System" target="_blank" rel="noopener noreferrer">
-                                            Project 3) AI - Based Health and Wellness Recommendation System
+                                        <a href="https://github.com/Anuraj4/Youtube-Thumbnail-Grabber" target="_blank" rel="noopener noreferrer">
+                                            Project 3) Youtube Thumbnail Grabber
                                         </a>
                                     </span>
                                 </div>
                                 <p>
-                                    Implemented predictive modeling with logistic regression, achieving 85% accuracy in heart disease prediction. It predicts the heart attacks.
-                                </p>
+                                    This project is a Svelte-based web application that allows users to download YouTube video thumbnails by entering the valid youtube video URL.                                </p>
                                 {/* Add buttons at the bottom of the card */}
                                 <div className="card-buttons">
                                     <a
-                                        href="https://github.com/Anuraj4/Health-Recommendation-System"
+                                        href="https://github.com/Anuraj4/Youtube-Thumbnail-Grabber"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-card btn-github"
@@ -109,7 +108,7 @@ const Projects = () => {
                                         <i className="fab fa-github mr-4"></i>
                                     </a>
                                     <a
-                                        href="https://health-recommendation-app.com"
+                                        href="https://youtube-thumbnail-grabber-nine.vercel.app/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-card btn-demo"
