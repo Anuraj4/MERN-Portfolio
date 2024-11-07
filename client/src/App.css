@@ -1062,7 +1062,6 @@ footer i:hover {
   text-align: center;
   border: 1px solid white;
 }
-
 @media only screen and (max-width: 768px) {
   .card {
     width: 80%;
