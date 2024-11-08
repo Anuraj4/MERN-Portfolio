@@ -433,7 +433,8 @@ section .title::after {
 .footer-icon {
   font-size: 24px;
   margin: 0 10px;
-  color: #fff;
+  color: #cbd154;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 
