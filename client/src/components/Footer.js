@@ -1,29 +1,30 @@
 import React from 'react';
+import '../App.css';  // Import CSS file for styling
 
 const Footer = () => {
     return (
         // Footer section start
-        <footer>
-            <div className="text-center">
+        <footer className="footer">
+            <div className="footer-content text-center">
                 <span>
                     Created By <a href="#">Anuraj Venkatpurwar</a> | <span className="far fa-copyright"></span>
                     {new Date().getFullYear()} All rights reserved.
                 </span>
-                <div>
+                <div className="social-icons">
                     <a href="https://www.linkedin.com/in/anuraj-venkatpurwar/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-linkedin footerIcons"></i> {/* LinkedIn icon */}
+                        <i className="fab fa-linkedin footer-icon"></i> {/* LinkedIn icon */}
                     </a>
                     <a href="https://github.com/Anuraj4" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-github footerIcons"></i> {/* GitHub icon */}
+                        <i className="fab fa-github footer-icon"></i> {/* GitHub icon */}
                     </a>
                     <a href="https://www.youtube.com/channel/UCCEbpScXk61QhUB_wHOcm6A" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-youtube footerIcons"></i> {/* YouTube icon */}
+                        <i className="fab fa-youtube footer-icon"></i> {/* YouTube icon */}
                     </a>
                     <a href="https://twitter.com/Anurajvenkatpur" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-twitter footerIcons"></i> {/* Twitter icon */}
+                        <i className="fab fa-twitter footer-icon"></i> {/* Twitter icon */}
                     </a>
                     <a href="https://www.instagram.com/a_n_u_r_a_j_70/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-instagram footerIcons"></i> {/* Instagram icon */}
+                        <i className="fab fa-instagram footer-icon"></i> {/* Instagram icon */}
                     </a>
                 </div>
             </div>

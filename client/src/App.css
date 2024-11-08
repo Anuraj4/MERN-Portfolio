@@ -396,6 +396,88 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+/* Footer Styles */
+.footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 25px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content span {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #ff9f00;
+  /* Change color on hover */
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.footer-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #ff9f00;
+  transform: scale(1.2);
+  /* Icon color change on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-icon {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-content {
+    padding: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-icon {
+    margin: 10px;
+  }
+
+}
+
+
 /* about section styling */
 .about {
   position: relative;
@@ -938,13 +1020,7 @@ section .title::after {
   cursor: pointer;
 }
 
-/* footer styling */
-footer {
-  padding: 10px 20px;
-  color: white;
-  background-color: black;
 
-}
 
 .typed-fade-out {
   opacity: 0;
@@ -953,84 +1029,6 @@ footer {
   /* Smooth transition effect */
 }
 
-footer .text-center {
-  text-align: center !important;
-}
-
-footer span a {
-  color: rgb(221, 221, 84);
-  transition: color 0.3s ease;
-}
-
-footer i {
-  /* padding-left: 10px; */
-  font-size: 25px;
-  color: var(--third-color);
-  transition: color 0.3s ease;
-}
-
-footer span a:hover {
-  color: var(--third-color);
-}
-
-footer i {
-  font-size: 27px;
-}
-
-footer i:hover {
-  color: var(--third-color);
-}
-
-.fa {
-  margin: 0 10px;
-  font-size: 24px;
-  transition: all 0.3s ease;
-}
-
-.fa-linkedin {
-  color: white;
-}
-
-.fa-github {
-  color: white;
-}
-
-.fa-youtube {
-  color: white;
-}
-
-.fa-twitter {
-  color: white;
-}
-
-.fa-instagram {
-  color: white;
-}
-
-.fa-linkedin:hover {
-  color: #0077b5;
-  box-shadow: 0 0 15px #0077b5;
-}
-
-.fa-github:hover {
-  color: #333;
-  box-shadow: 0 0 15px #333;
-}
-
-.fa-youtube:hover {
-  color: #ff0000;
-  box-shadow: 0 0 15px #ff0000;
-}
-
-.fa-twitter:hover {
-  color: #1da1f2;
-  box-shadow: 0 0 15px #1da1f2;
-}
-
-.fa-instagram:hover {
-  color: #e1306c;
-  box-shadow: 0 0 15px #e1306c;
-}
 
 .projects {
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
@@ -1062,6 +1060,7 @@ footer i:hover {
   text-align: center;
   border: 1px solid white;
 }
+
 @media only screen and (max-width: 768px) {
   .card {
     width: 80%;
@@ -1575,57 +1574,6 @@ footer i:hover {
 
 }
 
-footer a {
-  color: #007bff;
-  /* Default link color */
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-footer .footerIcons {
-  font-size: 20px;
-  /* Reduce icon size */
-  margin: 0 6px;
-  /* Less space between icons */
-}
-
-footer .text-center {
-  font-size: 12px;
-  /* Smaller text */
-}
-
-footer a:hover {
-  color: #0056b3;
-  /* Darker color on hover */
-  transform: scale(1.1);
-  /* Slight zoom effect on hover */
-}
-
-footer a:active {
-  transform: scale(0.95);
-  /* Slight shrink effect on click */
-}
-
-.fab {
-  font-size: 1.5rem;
-  /* Adjust icon size */
-  margin: 0 10px;
-  /* Space between icons */
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.fab:hover {
-  color: #895102;
-  /* Darker color on hover */
-  transform: scale(1.2);
-  /* Slight zoom effect on hover */
-}
-
-.fab:active {
-  transform: scale(0.9);
-  /* Slight shrink effect on click */
-}
-
 
 /* Your existing styles */
 
@@ -2089,6 +2037,7 @@ footer a:active {
 .btn-card:hover {
   background-color: #555;
 }
+
 .btn-github {
   background-color: #333;
   float: left;
@@ -2097,7 +2046,8 @@ footer a:active {
 .btn-github:hover {
   background-color: #24292e;
 }
-.btn-demo{
+
+.btn-demo {
   float: right;
 }
 
