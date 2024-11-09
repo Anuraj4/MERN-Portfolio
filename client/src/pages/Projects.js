@@ -60,7 +60,7 @@ const Projects = () => {
                                     </span>
                                 </div>
                                 <p>
-                                    Built a resume submission platform with React, MongoDB, HTML, integrating Google Forms for resume submissions. It is used for the HR's and Interviewers.
+                                    Built a resume submission platform with React, MongoDB, HTML, integrating Google Forms for resume submissions. It is used for the HR's and Interviewers. The uploaded CV stored in MongoDB Database.
                                 </p>
                                 {/* Add buttons at the bottom of the card */}
                                 <div className="card-buttons">
@@ -96,7 +96,7 @@ const Projects = () => {
                                     </span>
                                 </div>
                                 <p>
-                                    This project is a Svelte-based web application that allows users to download YouTube video thumbnails by entering the valid youtube video URL.                                </p>
+                                    This project is a Svelte-based web application that allows users to download YouTube video thumbnails by entering the valid youtube video URL with proper resolution.                                </p>
                                 {/* Add buttons at the bottom of the card */}
                                 <div className="card-buttons">
                                     <a
@@ -140,8 +140,8 @@ const Projects = () => {
                                     </span>
                                 </div>
                                 <p>
-                                    Welcome to the E-Commerce Website! This project is a comprehensive online shopping
-                                    platform built using the powerful MERN stack.
+                                    This project is a feature-rich, fully responsive online shopping platform, crafted using the powerful
+                                    MERN stack (MongoDB, Express.js, React, Node.js) to deliver dynamic user experience.
                                 </p>
                                 <div className="card-buttons">
                                     <a
@@ -154,6 +154,50 @@ const Projects = () => {
                                     </a>
                                     <a
                                         href="https://e-commerse-react-app.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-card btn-demo"
+                                    >
+                                        <i className="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Project 5 */}
+                        <div className="card" data-aos="flip-left">
+                            <div className="box">
+                                <img src={projectImage}
+                                    style={{ maxWidth: '100%' }}
+                                    height="auto"
+                                    loading="lazy"
+                                    alt="Project 5 Image"
+                                />
+                                <div className="text">
+                                    <span>
+                                        <a
+                                            href="https://github.com/Anuraj4/React-Weather-App"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Project 4) React Weather Application
+                                        </a>
+                                    </span>
+                                </div>
+                                <p>
+                                    Build a weather application that allows users to check the current weather and forecast for a given location.
+                                </p>
+                                <div className="card-buttons">
+                                    <a
+                                        href="https://github.com/Anuraj4/React-Weather-App"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-card btn-github"
+                                    >
+                                        <i className="fab fa-github mr-4"></i>
+                                    </a>
+                                    <a
+                                        href="https://react-weather-app-seven-livid.vercel.app/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-card btn-demo"
