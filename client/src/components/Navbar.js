@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Importing icons from react-icons
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
     const handleScroll = () => {
         if (window.scrollY > 50) {

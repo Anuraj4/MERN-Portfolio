@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion'; // Import AnimatePresence and motion
+import { AnimatePresence, motion } from 'framer-motion'; 
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -10,15 +10,14 @@ import Navbar from './components/Navbar';
 import Skills from './pages/Skills';
 import NotFound from './pages/NotFound';
 
-// Slide and fade transition
 const pageTransition = {
-  initial: { opacity: 0, y: 20 },  // Start off slightly below and invisible
-  animate: { opacity: 1, y: 0 },   // Move to original position and become visible
-  exit: { opacity: 0, y: -20 }      // Exit by moving slightly upwards and fading out
+  initial: { opacity: 0, y: 20 },  
+  animate: { opacity: 1, y: 0 },   
+  exit: { opacity: 0, y: -20 }      
 };
 
 const AnimatedRoutes = () => {
-  const location = useLocation(); // Get the current location
+  const location = useLocation(); 
 
   return (
     <AnimatePresence mode="wait">

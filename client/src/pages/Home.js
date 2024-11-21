@@ -17,7 +17,6 @@ const Home = () => {
             cursorBlinking: true,
         };
 
-        // Initialize Typed.js
         const typed = new Typed(".typing", options);
 
         return () => {

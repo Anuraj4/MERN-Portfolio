@@ -10,21 +10,19 @@ import Competitive from './Competitive';
 const About = () => {
 
     useEffect(() => {
-        // Initialize Typed.js for the first typing element
         const options1 = {
             strings: ["Web Developer", "Photo Editor", "Graphic Designer", "Coder", "Problem Solver"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true,
             fadeOut: true,
-            fadeOutClass: "typed-fade-out", // Add a class for fade out effect
-            cursorChar: "|", // Custom cursor character
-            cursorBlinking: true, // Enable cursor blinking
+            fadeOutClass: "typed-fade-out", 
+            cursorChar: "|", 
+            cursorBlinking: true, 
         };
 
         const typed1 = new Typed(".typing", options1);
 
-        // Clean up on component unmount
         return () => {
             typed1.destroy();
         };

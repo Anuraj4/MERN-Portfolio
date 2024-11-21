@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css'; // Ensure the correct path for the CSS file
+import '../App.css'; 
 import { MdEmail } from 'react-icons/md';
 import Footer from '../components/Footer';
 
@@ -10,15 +10,14 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [isSubmitting, setIsSubmitting] = useState(false); // Loading state
+    const [isSubmitting, setIsSubmitting] = useState(false); 
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsSubmitting(true); // Change button text to "Submitting..." when form is submitted
+        setIsSubmitting(true); 
 
 
-        // Prepare the form data
         const formData = {
             name,
             email,
@@ -28,9 +27,8 @@ const Contact = () => {
 
         try {
             const timeoutPromise = new Promise((_, reject) =>
-                setTimeout(() => reject(new Error("Request timed out")), 8000) // 5 seconds timeout
+                setTimeout(() => reject(new Error("Request timed out")), 8000) 
             );
-            // Send form data to backend
             const fetchPromise = fetch(`https://mern-portfolio-pdnu.onrender.com/api/contact`, {
                 method: 'POST',
                 headers: {
@@ -99,7 +97,6 @@ const Contact = () => {
         ratingsContainer.addEventListener('click', handleRatingClick);
         sendBtn.addEventListener('click', handleSendClick);
 
-        // Cleanup event listeners on component unmount
         return () => {
             ratingsContainer.removeEventListener('click', handleRatingClick);
             sendBtn.removeEventListener('click', handleSendClick);
@@ -154,7 +151,7 @@ const Contact = () => {
                                             required
                                             autoComplete="off"
                                             value={name}
-                                            onChange={(e) => setName(e.target.value)} // Controlled component
+                                            onChange={(e) => setName(e.target.value)} 
                                         />
                                     </div>
                                     <div className="field">
@@ -165,7 +162,7 @@ const Contact = () => {
                                             required
                                             autoComplete="off"
                                             value={email}
-                                            onChange={(e) => setEmail(e.target.value)} // Controlled component
+                                            onChange={(e) => setEmail(e.target.value)} 
                                         />
                                     </div>
                                 </div>
@@ -176,7 +173,7 @@ const Contact = () => {
                                         required
                                         autoComplete="off"
                                         value={subject}
-                                        onChange={(e) => setSubject(e.target.value)} // Controlled component
+                                        onChange={(e) => setSubject(e.target.value)} 
                                     />
                                 </div>
                                 <div className="textarea">
@@ -187,7 +184,7 @@ const Contact = () => {
                                         required
                                         autoComplete="off"
                                         value={message}
-                                        onChange={(e) => setMessage(e.target.value)} // Controlled component
+                                        onChange={(e) => setMessage(e.target.value)} 
                                     ></textarea>
                                 </div>
                                 <div className="button" id="contact_btn">

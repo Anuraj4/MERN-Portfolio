@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const ContactMessage = require('../models/ContactMessage');// Import the model
+const ContactMessage = require('../models/ContactMessage');
 
-// POST route to handle contact form submissions
 router.post('/contact', async (req, res) => {
   const { name, email, subject, message } = req.body;
   try {

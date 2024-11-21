@@ -1,9 +1,8 @@
 import React from 'react';
-import '../App.css';  // Import CSS file for styling
+import '../App.css';  
 
 const Footer = () => {
     return (
-        // Footer section start
         <footer className="footer">
             <div className="footer-content text-center">
                 <span>
