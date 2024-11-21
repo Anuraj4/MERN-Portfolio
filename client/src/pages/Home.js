@@ -6,27 +6,25 @@ import Typed from 'typed.js';
 
 const Home = () => {
     useEffect(() => {
-        // Options for Typed.js
         const options = {
             strings: ["Web Developer", "Photo Editor", "Graphic Designer", "Coder", "Problem Solver"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true,
             fadeOut: true,
-            fadeOutClass: "typed-fade-out", // Add a class for fade out effect
-            cursorChar: "|", // Custom cursor character
-            cursorBlinking: true, // Enable cursor blinking
+            fadeOutClass: "typed-fade-out", 
+            cursorChar: "|",
+            cursorBlinking: true,
         };
 
         // Initialize Typed.js
         const typed = new Typed(".typing", options);
 
-        // Cleanup function to destroy Typed.js instance on unmount
         return () => {
             typed.destroy();
         };
-    }, []); // Empty dependency array to run once on mount
-
+    }, []); 
+    
     return (
         <>
             <section className="home" id="home">
