@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
             <div className="max-width">
                 <div className="logo">
-                    <a href="#">Anuraj<span> Website</span></a>
+                    <a href="#">Anuraj<span> Portfolio</span></a>
                 </div>
                 <div className={`menu-btn ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     {isMenuOpen ? <FaTimes /> : <FaBars />} {/* Hamburger icon */}

@@ -278,11 +278,25 @@ body {
   height: auto;
   max-width: 100%;
   position: absolute;
-  left: 50%;
+  left: 20%;
   bottom: 10;
-  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: .6s;
+  animation:imgg 2s ease-in-out infinite;
+}
 
-  transition: bottom 1s, left 1s;
+@keyframes imgg {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-22px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @media screen and (max-width:450px) {
@@ -1060,6 +1074,7 @@ section .title::after {
   text-align: center;
   border: 1px solid white;
 }
+
 @media only screen and (max-width: 768px) {
   .card {
     width: 80%;
@@ -1595,7 +1610,6 @@ section .title::after {
 
 .home .images img:hover {
   filter: drop-shadow(0 0 10px rgba(0, 150, 255, 0.8));
-  border-radius: 50%;
 }
 
 .button {
