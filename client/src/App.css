@@ -1407,8 +1407,14 @@ section .title::after {
 }
 
 @media (max-width: 500px) {
+  .navbar .logo a{
+    font-size: 25px;
+  }
+  .menu-btn{
+    font-size: 20px;
+  }
   .home .home-content .text-2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .home .home-content {
@@ -1418,7 +1424,7 @@ section .title::after {
   }
 
   .home .home-content .text-3 {
-    font-size: 27px;
+    font-size: 24px;
   }
 
 
