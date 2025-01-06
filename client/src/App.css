@@ -598,7 +598,6 @@ section .title::after {
   height: 50px;
   border-radius: 50%;
   border-top-color: #3498db;
-  animation: spin 1s ease-in-out infinite;
 }
 
 @keyframes spin {
