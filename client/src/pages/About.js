@@ -6,7 +6,6 @@ import Typed from 'typed.js';
 import WorkExperience from './WorkExperience';
 import Competitive from './Competitive';
 
-
 const About = () => {
 
     useEffect(() => {
@@ -16,9 +15,9 @@ const About = () => {
             backSpeed: 60,
             loop: true,
             fadeOut: true,
-            fadeOutClass: "typed-fade-out", 
-            cursorChar: "|", 
-            cursorBlinking: true, 
+            fadeOutClass: "typed-fade-out",
+            cursorChar: "|",
+            cursorBlinking: true,
         };
 
         const typed1 = new Typed(".typing", options1);
