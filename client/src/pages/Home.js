@@ -36,7 +36,7 @@ const Home = () => {
                             <div id="welcome"></div>
                             <h1 style={{ marginBottom: "30px" }}>Welcome to My Website</h1>
                         </div>
-                        <div className="text-1" data-aos="fade-up">Hello, my name is</div>
+                        <div className="text-1" data-aos="fade-up"><strong>Hello, my name is</strong></div>
                         <div className="text-2" data-aos="fade-up">Anuraj</div>
                         <div className="text-3" data-aos="fade-up">I am a <span className="typing"></span></div>
                         <div className="images">

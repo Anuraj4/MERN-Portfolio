@@ -1371,15 +1371,8 @@ section .title::after {
 
 
   .home .home-content .text-2 {
-    font-size: 50px;
     /* display: block; */
-
-  }
-
-  .home .home-content .text-1 {
-    /* font-size: 50px; */
-    /* display: block; */
-    margin: 30px;
+    margin-bottom: 10px;
 
   }
 
@@ -1435,6 +1428,9 @@ section .title::after {
 
   .panel-container {
     width: 80%;
+  }
+  .home .home-content .text-1{
+    font-size: 20px;
   }
 }
 
