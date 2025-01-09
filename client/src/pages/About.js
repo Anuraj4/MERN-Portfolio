@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import img from '../images/about_image.png';
 import Footer from '../components/Footer';
@@ -7,8 +7,6 @@ import WorkExperience from './WorkExperience';
 import Competitive from './Competitive';
 
 const About = () => {
-    const [isImageLoading, setIsImageLoading] = useState(true); // State to track image loading
-
     useEffect(() => {
         const options1 = {
             strings: ["Web Developer", "Photo Editor", "Graphic Designer", "Coder", "Problem Solver"],
@@ -39,18 +37,10 @@ const About = () => {
                     <h2 className="title" data-aos="fade-down">About Me</h2>
                     <div className="about-content">
                         <div className="column left" data-aos="fade-right">
-                            {isImageLoading && (
-                                <div className="loading-spinner">
-                                    {/* Add a spinner or loading icon */}
-                                    <div className="spinner"></div>
-                                </div>
-                            )}
                             <img
                                 src={img}
                                 loading="lazy"
                                 alt="Profile"
-                                style={{ display: isImageLoading ? 'none' : 'block' }}
-                                onLoad={() => setIsImageLoading(false)} // Hide spinner when image loads
                             />
                         </div>
                         <div className="column right" data-aos="fade-up">
