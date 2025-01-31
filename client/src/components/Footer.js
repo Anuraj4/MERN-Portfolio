@@ -22,7 +22,7 @@ const Footer = () => {
                     <a href="https://twitter.com/Anurajvenkatpur" target="_blank" rel="noopener noreferrer">
                         <i title='Twitter' className="fab fa-twitter footer-icon"></i> {/* Twitter icon */}
                     </a>
-                    <a href="https://www.instagram.com/a_n_u_r_a_j_70/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/a_n_u_r_a_j_4_5/" target="_blank" rel="noopener noreferrer">
                         <i title='Instagram' className="fab fa-instagram footer-icon"></i> {/* Instagram icon */}
                     </a>
                 </div>
