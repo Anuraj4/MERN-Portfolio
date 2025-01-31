@@ -180,7 +180,7 @@ const Projects = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            Project 4) React Weather Application
+                                            Project 5) React Weather Application
                                         </a>
                                     </span>
                                 </div>
@@ -198,6 +198,48 @@ const Projects = () => {
                                     </a>
                                     <a
                                         href="https://react-weather-app-seven-livid.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-card btn-demo"
+                                    >
+                                        <i className="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Project 6 */}
+                        <div className="card" data-aos="flip-left">
+                            <div className="box">
+                                <img src={projectImage}
+                                    style={{ maxWidth: '100%' }}
+                                    height="auto"
+                                    loading="lazy"
+                                    alt="Project 5 Image"
+                                />
+                                <div className="text">
+                                    <span>
+                                        <a
+                                            href="https://github.com/Anuraj4/Quiz-App-MERN"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Project 6) MERN Quiz Application
+                                        </a>
+                                    </span>
+                                </div>
+                                <p>
+                                    It allows users to take a quiz, select answers, and get their scores at the end. The app dynamically fetches quiz questions and tracks user responses.                                </p>
+                                <div className="card-buttons">
+                                    <a
+                                        href="https://github.com/Anuraj4/Quiz-App-MERN"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-card btn-github"
+                                    >
+                                        <i className="fab fa-github mr-4"></i>
+                                    </a>
+                                    <a
+                                        href="https://quiz-app-fawn-nine-10.vercel.app/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-card btn-demo"
