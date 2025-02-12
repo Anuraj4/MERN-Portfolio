@@ -41,21 +41,56 @@ const Skills = () => {
 
                         <div className="column right skill-box">
                             <div className="icons">
-                                <img src={css} alt="CSS" loading="lazy" id="css-icon" data-aos="flip-left" />
-                                <img src={js} alt="JavaScript" loading="lazy" id="js-icon" data-aos="flip-left" />
-                                <img src={react} alt="React" loading="lazy" id="react-icon" data-aos="flip-left" />
-                                <img src={flutter} id="flutter-icon" loading="lazy" data-aos="flip-left" />
-                                <img src={java} alt="Java" id="java-icon" loading="lazy" data-aos="flip-left" />
-                                <img src={git} alt="Git" id="git-icon" loading="lazy" data-aos="flip-left" />
+                                <div className="tooltip">
+                                    <img src={css} alt="CSS" loading="lazy" id="css-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">CSS</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={js} alt="JavaScript" loading="lazy" id="js-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">JavaScript</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={react} alt="React" loading="lazy" id="react-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">ReactJS</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={flutter} alt="Flutter" loading="lazy" id="flutter-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">Flutter</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={java} alt="Java" loading="lazy" id="java-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">Java</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={git} alt="Git" loading="lazy" id="git-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">Git</span>
+                                </div>
                             </div>
-
                             <div className="icons">
-                                <img src={html} alt="HTML" loading="lazy" id="html-icon" data-aos="flip-left" />
-                                <img src={nodejs} alt="Node.js" loading="lazy" id="nodejs-icon" data-aos="flip-left" />
-                                <img src={vscode} alt="VSCode" loading="lazy" id="vscode-icon" data-aos="flip-left" />
-                                <img src={cpp} alt='CPP' loading="lazy" id="cpp-icon" data-aos="flip-left" />
-                                <img src={python} alt="Python" loading="lazy" id="python-icon" data-aos="flip-left" />
-                                <img src={github} alt="GitHub" loading="lazy" id="github-icon" data-aos="flip-left" />
+                                <div className="tooltip">
+                                    <img src={html} alt="HTML" loading="lazy" id="html-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">HTML</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={nodejs} alt="Node.js" loading="lazy" id="nodejs-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">NodeJS</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={vscode} alt="VSCode" loading="lazy" id="vscode-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">VS Code</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={cpp} alt="C++" loading="lazy" id="cpp-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">C++</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={python} alt="Python" loading="lazy" id="python-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">Python</span>
+                                </div>
+                                <div className="tooltip">
+                                    <img src={github} alt="GitHub" loading="lazy" id="github-icon" data-aos="flip-left" />
+                                    <span className="tooltip-text">GitHub</span>
+                                </div>
                             </div>
                         </div>
                     </div>
