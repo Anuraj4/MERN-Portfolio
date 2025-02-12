@@ -7,7 +7,7 @@ const WorkExperience = () => {
       <div className="timeline">
         <div className="timeline-item">
           <div className="timeline-content">
-            <h3>Full Stack Developer</h3>
+            <h3>Full Stack Developer Intern</h3>
             <span className="timeline-date">June 2024 - August 2024</span>
             <p>Meta Craftlab</p>
             <p>Worked on collaborative full-stack projects including Git and GitHub.</p>
