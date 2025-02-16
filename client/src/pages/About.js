@@ -60,7 +60,6 @@ const About = () => {
             </section>
             <WorkExperience />
             <Competitive />
-            <Footer />
         </>
     );
 };

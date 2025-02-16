@@ -215,7 +215,6 @@ const Contact = () => {
                     <button className="btn" id="send">Send Review</button>
                 </div>
             </section>
-            <Footer />
         </>
     );
 };

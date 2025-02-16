@@ -3,6 +3,11 @@ import '../App.css';
 import img from '../images/png8.png';
 import Footer from '../components/Footer';
 import Typed from 'typed.js';
+import About from '../pages/About';
+import Services from '../pages/Services';
+import Skills from '../pages/Skills';
+import Projects from '../pages/Projects';
+import Contact from '../pages/Contact';
 
 const Home = () => {
     useEffect(() => {
@@ -45,6 +50,11 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <About />
+            <Services />
+            <Skills />
+            <Projects />
+            <Contact />
             <Footer />
         </>
     );

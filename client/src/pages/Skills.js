@@ -97,7 +97,6 @@ const Skills = () => {
                 </div>
             </section>
             <Certifications />
-            <Footer />
         </>
 
     );
