@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import projectImage from '../images/projectImage.jpg';
-import Footer from '../components/Footer';
 
 const Projects = () => {
 

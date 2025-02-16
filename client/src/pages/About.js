@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../App.css';
 import img from '../images/about_image.png';
-import Footer from '../components/Footer';
 import Typed from 'typed.js';
 import WorkExperience from './WorkExperience';
 import Competitive from './Competitive';

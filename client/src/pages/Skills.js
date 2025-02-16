@@ -12,7 +12,6 @@ import vscode from '../images/skill-icons/icons8-visual-studio-code-2019.svg';
 import cpp from '../images/skill-icons/icons8-c++.svg';
 import python from '../images/skill-icons/icons8-python-48.png';
 import github from '../images/skill-icons/icons8-github-48.png'
-import Footer from '../components/Footer';
 import Certifications from './Certifications';
 
 
