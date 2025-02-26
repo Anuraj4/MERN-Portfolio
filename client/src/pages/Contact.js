@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css'; 
 import { MdEmail } from 'react-icons/md';
+import Footer from '../components/Footer';
 
 const Contact = () => {
     const [selectedRating, setSelectedRating] = useState('');
@@ -214,6 +215,7 @@ const Contact = () => {
                     <button className="btn" id="send">Send Review</button>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };
