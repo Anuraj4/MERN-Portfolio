@@ -122,8 +122,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   transition: background-color 0.3s ease;
   /* Smooth transition for background color */
-  border-bottom: 1px solid white;
-  background-color: #000;
+  /* border-bottom: 1px solid white; */
+  backdrop-filter: blur(6px);
+  background-color: #05071acc;
 }
 
 .navbar.sticky {
